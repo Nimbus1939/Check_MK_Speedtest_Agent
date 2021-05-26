@@ -18,7 +18,7 @@ Update the thresholds for PING and Speed in the SpeedtestCSV.py<br>
 Make sure that the user that executes the CronSpeed.py script has full rights to the .csv file and its folder, as it will be deleted and created every time the script runs.<br>
 
 # After (every) reboot
-Make sure you run the "Speedtest" and accept the license.<br>
+Make sure you run the "Speedtest" stand alone client and accept the license.<br>
 
 # Existing problems and improvements
 Get the inverted logic for Check_MK to work, so that a higher (speed) value is better. <br>
