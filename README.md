@@ -6,7 +6,7 @@ It is not pretty, but it gets the job done for me.<br>
 Make sure you got Check_MK-agent up and running.<br>
 Put the CronSpeed.py in a folder where anyone can execute it, and set it up in the Crontab to run at an interval of your choosing, I do it on the hour every hour. <br>
 (On my server it takes about 20 sec. to execute it, remember it uses data and bandwidth!)<br>
-Put the SpeedtestCSV.py in your Check_MK-agents "local" folder<br>
+Put the SpeedtestCSV.py in your Check_MK-agents "local" folder, on my server it is: /usr/lib/check_mk_agent/local/<br>
 Remember to make both executable.<br>
 Make sure you have Python 3.7 or higher installed.<br>
 Make sure you got Speedtest-CLI installed.<br>
