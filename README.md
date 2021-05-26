@@ -1,6 +1,7 @@
 # Check_MK_Speedtest_Agent
 Just my own little Check_MK_Agent extension to get Speedtest results to show up in Check_MK monitoring.<br>
 It is not pretty, but it gets the job done for me.<br>
+It produces three services to show in Check_MK: "Internet Download", "Internet PING" & "Internet Upload"<br>
 
 # Installation
 Make sure you got Check_MK-agent up and running.<br>
