@@ -15,7 +15,7 @@ To add service in Check_MK, just do a Service Discovery on the agent.<br>
 # Before first run
 Update the location af the .csv file in both scripts.<br>
 Update the thresholds for PING and Speed in the SpeedtestCSV.py<br>
-Make sure that the user that executes the CronSpeed.py script has full rights to the .csv file, as it will be deleted and created every time the script runs.<br>
+Make sure that the user that executes the CronSpeed.py script has full rights to the .csv file and its folder, as it will be deleted and created every time the script runs.<br>
 
 # After (every) reboot
 Make sure you run the "Speedtest" and accept the license.<br>
