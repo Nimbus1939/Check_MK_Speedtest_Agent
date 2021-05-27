@@ -8,7 +8,10 @@ file_path = '/home/ubuntu/speedtest.csv'
 with open(file_path) as csv_file:
 	csv_reader = csv.reader(csv_file, delimiter=',')
 	for row in csv_reader:
-    # Update the intervals to fit your connection - I have 1000/100 Mbps.
+    # Update the speed intervals to fit your connection - I have 1000/100 Mbps.
+		# The next three lines will produce one service each, if you prefer to have them as one service use the fourth line only and comment out the next three lines.
 		print(f"P \"Internet ping\" ping={row[0]};20;500;0;1000 Pingtime {row[0]}ms")
 		print(f"P \"Internet download\" download={row[1]};600:9999;300:9999 Download speed {row[1]} Mb/s")
 		print(f"P \"Internet upload\" upload={row[2]};80:9999;50:9999 Upload speed {row[2]} Mb/s")
+		# The line below will produce one service with three graphs if you do not want them all in one comment out the next line, instead of three services.
+		print(f"P \"Internet speed\" Download={row[1]};600:1000;300:1000|Upload={row[2]};80:1000;50:1000|PING={row[0]};20;500")
