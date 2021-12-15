@@ -23,7 +23,7 @@ def write_csv(row):
     writer = csv.writer(csvfile, delimiter=',', quotechar='"')
     writer.writerow(row)
 
-response = subprocess.run(['/usr/bin/speedtest', '--format=csv'], capture_output=True, encoding='utf-8')
+response = subprocess.run(['/usr/bin/speedtest', '--accept-gdpr', '--format=csv'], capture_output=True, encoding='utf-8')
 
  # if speedtest-cli exited with no errors / ran successfully
 if response.returncode == 0:
