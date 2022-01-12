@@ -26,3 +26,4 @@ Make sure you run the "Speedtest" stand alone client and accept the license.<br>
 # Existing problems and improvements
 Get the inverted logic for Check_MK to work, so that a higher (speed) value is better. <br>
 Move threshold values to a variable instead of directly in the script.<br>
+Make Pero-O-Meters.
