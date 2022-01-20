@@ -6,6 +6,7 @@ import time
 import subprocess
 from decimal import *
 
+# update the filepaths to fit your system
 file_path = '/home/ubuntu/speedtest.csv'
 if os.path.exists('/home/ubuntu/speedtest.csv'):
   os.remove('/home/ubuntu/speedtest.csv')
